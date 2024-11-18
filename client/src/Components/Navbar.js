@@ -1,61 +1,35 @@
 import React from 'react'
-import '../Styles/Navbar.css'
-
+import '../Styles/Navbar.css';
+//import { Link } from'react-router-dom';
 const Navbar = () => {
   return (
     <div>
-      <section class="navigation">
-  <div class="nav-container">
-    <div class="brand">
-      <a href="#!">Logo</a>
+      <nav class="nav">
+    <div class="container">
+        <div class="logo">
+            <a href="#">YourLogo</a>
+        </div>
+        <div class="main_list" id="mainListDiv">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">P-Space</a></li>
+                <li><a href="#">Booking</a></li>
+                <li><a href="#">Wallet</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="media_button">
+            <button class="main_media_button" id="mediaButton">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
     </div>
-    <nav>
-      <div class="nav-mobile"><a id="navbar-toggle" href="#!"><span></span></a></div>
-      <ul class="nav-list">
-        <li>
-          <a href="#!">Home</a>
-        </li>
-        <li>
-          <a href="#!">About</a>
-        </li>
-        <li>
-          <a href="#!">Services</a>
-          <ul class="navbar-dropdown">
-            <li>
-              <a href="#!">Sass</a>
-            </li>
-            <li>
-              <a href="#!">Less</a>
-            </li>
-            <li>
-              <a href="#!">Stylus</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="#!">Portfolio</a>
-        </li>
-        <li>
-          <a href="#!">Category</a>
-          <ul class="navbar-dropdown">
-            <li>
-              <a href="#!">Sass</a>
-            </li>
-            <li>
-              <a href="#!">Less</a>
-            </li>
-            <li>
-              <a href="#!">Stylus</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="#!">Contact</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</section>
+</nav>
+    
+<section class="home"></section>
     </div>
   )
 }
